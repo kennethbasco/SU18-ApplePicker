@@ -41,6 +41,8 @@ public class ApplePicker : MonoBehaviour {
 		{
 
 			Destroy (tGO);
+
+		}
 			int basketIndex = basketList.Count - 1;
 			GameObject tBasketGO = basketList [basketIndex];
 
@@ -54,13 +56,11 @@ public class ApplePicker : MonoBehaviour {
 
 			}
 
-		}
+		
 
 
 	}
 	
 	// Update is called once per frame
-	void Update () {
-		
-	}
+
 }
