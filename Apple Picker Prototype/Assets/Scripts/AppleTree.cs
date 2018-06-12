@@ -42,16 +42,12 @@ public class AppleTree : MonoBehaviour
 		//Changing Direction
 
 		if (pos.x < -leftAndRightEdge) {
-			speed = Mathf.Abs (speed); //Move Right
+			speed = Mathf.Abs(speed); //Move Right
 
 		} 
 		else if (pos.x > leftAndRightEdge) 
 		{
-			speed = -Mathf.Abs (speed); //Move Left
-		} 
-		else if (Random.value < chanceToChangeDirections) 
-		{
-			speed *= -1; //Change Direction
+			speed = -Mathf.Abs(speed); //Move Left
 		}
 		
 	}

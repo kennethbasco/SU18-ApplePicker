@@ -20,21 +20,18 @@ public class HighScore : MonoBehaviour {
 
 	}
 	// Use this for initialization
-	void Start () {
-		
-	}
+
 	
 	// Update is called once per frame
 	void Update () {
+
+		Text gt = this.GetComponent<Text> ();
+		gt.text = "High Score: "+score;
 
 		if (score > PlayerPrefs.GetInt ("HighScore")) 
 		{
 			PlayerPrefs.SetInt ("HighScore:", score);
 
 		}
-
-		Text gt = this.GetComponent<Text> ();
-		gt.text = "High Score: "+score;
-
 	}
 }
