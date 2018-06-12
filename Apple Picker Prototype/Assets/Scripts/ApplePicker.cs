@@ -23,10 +23,11 @@ public class ApplePicker : MonoBehaviour {
 
 		for (int i = 0; i < numBaskets; i++) 
 		{
-			GameObject tBasketGO = Instantiate<GameObject> (basketPrefab);
+			GameObject tBasketGO = Instantiate<GameObject> (basketPrefab) ;
 			Vector3 pos = Vector3.zero;
 			pos.y = basketBottomY + (basketSpacingY * i); 
 			tBasketGO.transform.position = pos;
+			basketList.Add (tBasketGO);
 		}
 
 	}
