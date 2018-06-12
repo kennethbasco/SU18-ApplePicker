@@ -7,6 +7,18 @@ public class HighScore : MonoBehaviour {
 
 	static public int score = 1000;
 
+	void Awake()
+	{
+
+		if(PlayerPrefs.HasKey("HighScore"))
+		{
+			score = PlayerPrefs.GetInt ("HighScore");
+
+		}
+
+		PlayerPrefs.SetInt ("HighScore", score);
+
+	}
 	// Use this for initialization
 	void Start () {
 		
@@ -14,6 +26,12 @@ public class HighScore : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+
+		if (score > PlayerPrefs.GetInt ("HighScore")) 
+		{
+			PlayerPrefs.SetInt ("HighScore:", score);
+
+		}
 
 		Text gt = this.GetComponent<Text> ();
 		gt.text = "High Score: "+score;

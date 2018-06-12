@@ -14,7 +14,7 @@ public class Basket : MonoBehaviour {
 
 		GameObject scoreGO = GameObject.Find ("ScoreCounter");
 		scoreGT = scoreGO.GetComponent<Text> ();
-		scoreGT = "0";
+		scoreGT.text = "0";
 
 	}
 	

@@ -23,7 +23,7 @@ GameObject:
   - component: {fileID: 135281129578576998}
   - component: {fileID: 23511494794793404}
   - component: {fileID: 54376849187616542}
-  - component: {fileID: 114455948650324200}
+  - component: {fileID: 114716163184702768}
   m_Layer: 9
   m_Name: Apple
   m_TagString: Untagged
@@ -98,7 +98,7 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &114455948650324200
+--- !u!114 &114716163184702768
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
