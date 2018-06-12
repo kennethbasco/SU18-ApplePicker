@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class Basket : MonoBehaviour {
 
-	[Header("Set in Dynamically")]
+	[Header("Set Dynamically")]
 
 	public Text scoreGT;
 
@@ -53,7 +53,7 @@ public class Basket : MonoBehaviour {
 			if (score > HighScore.score) 
 			{
 
-
+				HighScore.score = score;
 			}
 
 		}
